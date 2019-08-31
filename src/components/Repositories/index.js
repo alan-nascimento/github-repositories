@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Repositories() {
-  return <h1>Repositories</h1>;
+import { Title } from './styles';
+
+export default function Repositories({ match }) {
+  return <Title>Repositories: {decodeURIComponent(match.params.repository)}</Title>;
 }
